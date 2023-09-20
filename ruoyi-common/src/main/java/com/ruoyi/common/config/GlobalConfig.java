@@ -8,6 +8,9 @@ import org.springframework.context.annotation.Configuration;
 public class GlobalConfig {
     @Value("${otc.siteName}")
     public String siteName;
+
+    @Value("${otc.loginBgImg:../img/login-background.jpg}")
+    public String loginBgImg;
 //    @Value("${otc.accessKeyId}")
 //    public String accessKeyId;
 //    @Value("${otc.accessKeySecret}")

@@ -15,7 +15,12 @@
     <meta http-equiv="refresh" content="0;ie.html" />
     <![endif]-->
     <link rel="shortcut icon" href="../static/favicon.ico" th:href="@{favicon.ico}"/>
-    <style type="text/css">label.error { position:inherit;  }</style>
+    <style type="text/css">
+        label.error { position:inherit;  }
+        body.signin {
+            background-image: url("[[${@globalConfig.loginBgImg}]]");
+        }
+    </style>
     <script>
         if(window.top!==window.self){window.top.location=window.location};
     </script>
